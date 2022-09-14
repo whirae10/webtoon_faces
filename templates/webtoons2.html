@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webtoon</title>
+</head>
+<body>
+<header style="height: 50px"></header>
+<div align="center">
+    <font size="+4">
+        {{metas['title'][1]}} <!--제목-->
+    </font>
+    <br>
+    <font size="+1">
+        {{metas['author'][1]}} <!--작가-->
+    </font>
+    <br>
+    <font color="#ff8c00">
+        {{metas['score'][1]}} <!--점수-->
+    </font>
+
+</div>
+<table style="width: 100%">
+    <tr>
+        <td style="width: 30%">
+        </td>
+        <td style="width: 40%">
+            <div align="center" ;style='width:100%'>
+                <a href={{metas['Url'][1]}}>
+                    <img src='{{bb}}' alt="웹툰 대표이미지" ;style='width:100%'>
+                </a>
+            </div>
+        </td>
+        <td style="width: 30%">
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+
+<table style="width: 100%">
+    <tr>
+        <td style="width: 15%"></td>
+        <td style="width: 70%">
+            {{metas['Story'][1]}}<!--스토리-->
+        </td>
+        <td style="width: 15%"></td>
+    </tr>
+    <tr>
+        <td style="width: 15%"></td>
+        <td style="width: 70%" align="right">
+            <button onclick="history.back()">이전 페이지</button>
+        </td>
+        <td style="width: 15%"></td>
+    </tr>
+    <tr>
+        <td style="width: 15%"></td>
+        <td style="width: 70%" align="right">
+            <button type="submit" onclick="window.location.href='/'">처음으로</button>
+        </td>
+        <td style="width: 15%"></td>
+    </tr>
+</table>
+
+</body>
+</html>
